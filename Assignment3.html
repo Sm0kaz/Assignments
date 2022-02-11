@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Assignment 3</title>
+    </header>
+    <body>
+        <script>
+            var MIS=[
+                {name:"Darren Garcia",
+                gender: "m",
+                age: 38,
+                position:"Computer Systems Coordinator"
+                },
+                {name:"Ashton Jones",
+                gender: "m",
+                age: 30,
+                position:"Computer Systems Coordinator"
+                },
+                {name:"Louis Ayuso",
+                gender: "m",
+                age: 43,
+                position:"Computer Systems Administrator"
+                },
+                {name:"Gabriel Bol",
+                gender: "m",
+                age: 38,
+                position:"MIS Manager"
+                },
+                {name:"Brion Neal",
+                gender: "m",
+                age: 32,
+                position:"Computer Systems Coordinator"
+                }
+            ]
+
+        console.log("Answer using For Loop:")
+
+        console.log("")
+
+        for (member=0; member<(MIS.length-1);member++)
+            {
+                console.log(MIS[member].name,"-", MIS[member].position)
+            }
+
+        console.log("")
+
+        console.log("Anwer using forEach Loop:")   
+
+        console.log("")
+
+        MIS.forEach(
+            function(member,index)
+            {
+                console.log(member.name,"-",member.position);
+            }
+        )
+        </script>
+    </body>
+</html>
